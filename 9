@@ -2596,11 +2596,7 @@ while getgenv().Wheel == true do
 
     game:GetService("ReplicatedStorage").Spin:FireServer()
     task.wait(0.0000000000000000001)
-    local args = {
-    [1] = "e"
-}
-
-game:GetService("ReplicatedStorage").Click:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").SpinCallback:FireServer()
 end
     else
         getgenv().Wheel = false
@@ -2609,11 +2605,7 @@ while getgenv().Wheel == true do
 
     game:GetService("ReplicatedStorage").Spin:FireServer()
     task.wait(0.0000000000000000001)
-    local args = {
-    [1] = "e"
-}
-
-game:GetService("ReplicatedStorage").Click:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").SpinCallback:FireServer()
         end
     end
 end)
